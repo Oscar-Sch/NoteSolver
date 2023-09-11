@@ -19,7 +19,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(getApiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.ranso.EasyNotes"))
+                .apis(RequestHandlerSelectors.basePackage("com.ensolvers.EasyNotes"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -27,8 +27,8 @@ public class SwaggerConfig {
     private ApiInfo getApiInfo() {
         Contact contact = new Contact("Oscar Andrés Schwerdt", "https://www.linkedin.com/in/oscar-schwerdt/","oscarschwerdt@gmail.com");
         return new ApiInfoBuilder()
-                .title("EasyNotes API")
-                .description("Documentation for the EasyNotes API")
+                .title("NoteSolver API")
+                .description("Documentation for the NoteSolver API")
                 .version("1.0.0")
                 .contact(contact)
                 .build();
