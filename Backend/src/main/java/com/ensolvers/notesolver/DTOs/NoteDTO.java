@@ -39,7 +39,6 @@ public class NoteDTO {
         this.title = title;
         this.content = content;
         this.tagList = tagList.stream().map(TagDTO::new).collect(Collectors.toSet());
-        ;
         this.isArchived = isArchived;
         this.lastEdited = lastEdited;
     }
